@@ -13,10 +13,6 @@
 # Uncomment the line if you want fastlane to automatically update itself
 # update_fastlane
 
-
-
-
-
 default_platform(:ios)
 
 platform :ios do
@@ -27,7 +23,7 @@ platform :ios do
 	# export_method 可选值 app-store、ad-hoc、development、enterprise
 	build_app(
 			export_method:"development",
-			output_directory:"./build"
+			output_directory:"./build_ipa"
 			)
 	pgyer(api_key: "*******", user_key: "******")
   end
